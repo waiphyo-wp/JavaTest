@@ -27,6 +27,14 @@ public class LF_02_Method {
         
         // hello1("hello");
         // checkAge(2, "mg mg");
+
+        LF_02_Method callInstantMethodOne = new LF_02_Method();
+
+        callInstantMethodOne.instantMethodOne();
+
+        double test = 12312312312.123123444d;
+
+        System.out.println(test);
         
     }
 
@@ -104,5 +112,14 @@ public class LF_02_Method {
         }
     }
     */
+
+    void instantMethodOne() {
+        LF_02_Method callInstantMethodTwo = new LF_02_Method();
+        callInstantMethodTwo.instantMethodTwo();
+    }
+
+    void instantMethodTwo() {
+        System.out.println("Hello Instant Method Two");
+    }
 
 }
