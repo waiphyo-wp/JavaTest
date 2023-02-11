@@ -49,3 +49,6 @@ class Counter {
         System.out.println("Count of Name : " + name + " - " + count);
     }
 }
+
+class Test {
+}
