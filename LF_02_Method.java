@@ -34,7 +34,7 @@ public class LF_02_Method {
 
         double test = 12312312312.123123444d;
 
-        System.out.println(test);
+        // System.out.println(test);
         
     }
 
