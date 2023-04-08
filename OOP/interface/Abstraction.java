@@ -1,12 +1,5 @@
 // package OOP.Abstraction;
 
-
-// public class Abstraction {
-//     Animal a = new Animal("mgmgs");
-
-//     DanceEnable d = new DanceEnable();
-// }
-
 // abstract class
 abstract class Animal {
 
@@ -20,13 +13,18 @@ abstract class Animal {
     // abstract method
     abstract void feed(String food);
 
-    final void greet() {
-        System.out.println("Hello I am animal ");
+    public void greet(String name) {
+        System.out.println("Hello I am animal " + name);
     }
 }
 
-// simple class to abstract class
-class Monkey extends Animal {
+// interface
+interface DanceEnable {
+    void dance(); // interface method
+}
+
+// simple class to abstract class & implements interface
+class Monkey extends Animal implements DanceEnable {
     
     Monkey(String name) {
         super(name);
@@ -35,6 +33,12 @@ class Monkey extends Animal {
     // must Override Abstract method
     void feed(String food) {
         System.out.println("I am Monkey. I am eating " + food);
+    }
+
+    // override interface method
+    @Override
+    public void dance() {
+        System.out.println("Mankey Dancing!!!!");
     }
 }
 
@@ -62,7 +66,7 @@ abstract class Elephant extends Animal {
 }
 
 // simple class to abstract class
-class AsianElephant extends Elephant {
+class AsianElephant extends Elephant implements DanceEnable {
 
     AsianElephant(String name) {
         super(name);
@@ -72,6 +76,11 @@ class AsianElephant extends Elephant {
     void wash() {
         // System.out.println(name);
         System.out.println("I am asian elephant. I am washing ");
+    }
+
+    // override interface method
+    public void dance() {
+        System.out.println("Asian Elephant Dancing!!!!");
     }
 }
 
@@ -89,27 +98,11 @@ class zoo {
         return false;
     }
 
-    //show animals
-    void showAnimals() {
-        System.out.println("[");
-
-        for (int i = 0; i < animals.length; i++) {
-            if (i>0) {
-                System.out.print(", ");
-            }
-
-            System.out.print(animals[i]);
-        }
-
-        System.out.println("]");
-    }
-
     // feed method
     void feed(String food) {
         for (Animal a : animals) {
             if (a != null) {
                 a.feed(food);
-                
             }
         }
     }
@@ -125,17 +118,14 @@ class zoo {
     }
 }
 
-interface DanceEnable {
+class Main {
+    public static void main(String[] args) {
+        // Monkey monkey = new Monkey("justiceMonkey");
+        // monkey.greet(monkey.name);
 
-   void dance();
 
-}
-
-class Robot implements DanceEnable {
-
-    @Override
-    public void dance() {
-        System.out.println("Robot Dancing");
+        // void dance(DanceEnable dancer) {
+        //     dancer.dance();
+        // }
     }
 }
-

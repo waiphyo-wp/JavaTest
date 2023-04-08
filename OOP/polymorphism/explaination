@@ -1,0 +1,5 @@
+Polymorphism => Many shape and many behavior
+
+// super class Machine type can accept sub class Car Obj called Plymorphism.
+Machine m = new Car(); // Machine super class , Machine type car obj
+

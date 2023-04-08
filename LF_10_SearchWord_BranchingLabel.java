@@ -57,7 +57,7 @@ public class LF_10_SearchWord_BranchingLabel {
 
             // loop of word from a line
             for (int j = 0; j < words.length; j++) {
-                // System.out.println(words[j]);
+                System.out.println(words[j]);
 
                 String escapseWord = words[j].replaceAll("\\.", "").replaceAll(",", "");
 
@@ -69,7 +69,13 @@ public class LF_10_SearchWord_BranchingLabel {
                 }
             }
         }
+        
+        
 
-        return result;
+        
     }
+
+    
 }
+
+class Student {}

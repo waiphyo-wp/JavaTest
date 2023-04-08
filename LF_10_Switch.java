@@ -54,4 +54,25 @@ public class LF_10_Switch {
 
         System.out.println(strDay);
      }
+
+
+    //  static void switchDemoOne(int day) {
+    //     switch (day) {
+    //         case 0:
+    //             "this is o";
+                
+    //         // case 1:
+    //         //     System.out.println("Monday");
+    //         //     break;
+    //         // case 2:
+    //         //     System.out.println("Tuesday");
+    //         //     break;                
+    //         default:
+    //             "this is not zero";
+    //     };
+
+        // System.out.println(res);
+
+        // return res;
+    }
 }

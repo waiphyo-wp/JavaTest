@@ -1,4 +1,4 @@
-package OOP.Inheritance;
+// package OOP.Inheritance;
 
 public class Person {
     int idCard; // not own Student class
