@@ -1,0 +1,15 @@
+OOP/packages/com/jdc/demo/operations/AbstractOperation.java
+OOP/packages/com/jdc/demo/operations/OperationForAddStudent.class
+OOP/packages/com/jdc/demo/operations/OperationForAddStudent.java
+OOP/packages/com/jdc/demo/operations/OperationForDelete.class
+OOP/packages/com/jdc/demo/operations/OperationForDelete.java
+OOP/packages/com/jdc/demo/operations/OperationForFindStudentById.class
+OOP/packages/com/jdc/demo/operations/OperationForFindStudentById.java
+OOP/packages/com/jdc/demo/operations/OperationForShowAllStudent.class
+OOP/packages/com/jdc/demo/operations/OperationForShowAllStudent.java
+OOP/packages/com/jdc/demo/service/StudentRegistry.class
+OOP/packages/com/jdc/demo/service/StudentRegistry.java
+OOP/packages/com/jdc/demo/utils/IdGenerator.class
+OOP/packages/com/jdc/demo/utils/IdGenerator.java
+OOP/packages/com/jdc/demo/utils/UserInputs.class
+OOP/packages/com/jdc/demo/utils/UserInputs.java
