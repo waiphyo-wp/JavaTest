@@ -27,9 +27,9 @@ abstract class Animal {
 
 // simple class to abstract class
 class Monkey extends Animal {
-    
     Monkey(String name) {
         super(name);
+        name = name;
     }
 
     // must Override Abstract method

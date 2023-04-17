@@ -75,11 +75,14 @@ interface MyInterface {
 
 
 interface Interface1 {
-    void doJob1();
+    String getVal () ;
+    public final static void main(String[] args) {
+        
+    }
 }
 
-interface Interface2 {
-    void doJob2();
+abstract class Interface2 implements Interface1 {
+    int [] nums [] = new int[][]{{0,0}};
 }
 
 interface Interface3 extends Interface1 , Interface2 {

@@ -10,16 +10,15 @@ abstract class Dog extends AbstractionTwo {
 
 }
 
-class AsianDog extends Dog {
-
-    @Override
-    public void eat() {
-        System.out.println("I am eating");
+class AsianDog{
+    private String name;
+    public AsianDog(String name) {
+        this.name = name;
     }
 
-    @Override
-    public void greet() {
-        System.out.println("Greeting");
+    public String getName() {
+        return name;
     }
+
 }
 

@@ -7,10 +7,23 @@ public class StudentRegistry {
     private IdGenerator idGen;
     private Student[] array;
 
-    public StudentRegistry() {
+    // start singleton object
+
+    // 2
+    private static final StudentRegistry INSTANCE = new StudentRegistry();
+
+    // 3
+    public static StudentRegistry getInstance() {
+        return INSTANCE;
+    }
+
+    // 1
+    private StudentRegistry() {
         idGen = new IdGenerator();
         array = new Student[0];
     }
+
+    // end singleton object
 
     // add new student
     public Student addNew(Student s) {
@@ -44,6 +57,31 @@ public class StudentRegistry {
 
         // not equal id
         return null;
+    }
+
+    public Student remove(int id) {
+
+        // equal id
+        for (var s : array) {
+            if (s.getId() == id) {
+                removeFromArray(s , id);
+                return s;
+            }
+        }
+
+        return null;
+    }
+
+    private void removeFromArray(Student s , int indexId) {
+        // var copy = new Student[array.length + 1];
+
+        for (int i = indexId; i < array.length-1; i++) {
+            array[i] = array[i+1];
+        }
+
+        // copy[copy.length + 1] = s;
+
+        // array = copy;
     }
 
     private void pushToArray(Student s) {

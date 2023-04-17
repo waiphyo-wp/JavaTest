@@ -43,4 +43,44 @@ class Hello {
     int sub(int a, int b) {
         return a-b;
     }
+
+    // use Enum value in Switch
+    void doJob(Operation operation) {
+        switch (operation) {
+            case ADD_STUDENT:
+                System.out.println("Add STD");
+                break;
+            case GET_STUDENT:
+                System.out.println("Add STD");
+                break;
+            case ADD_RESULT:
+                System.out.println("Add STD");
+                break;
+            case GET_RESULT:
+                System.out.println("Add STD");
+                break;
+        
+            default:
+                break;
+        }
+    }
+
+
+    // 1 > Create Enum
+    enum Operation {
+        ADD_STUDENT,
+        GET_STUDENT,
+        ADD_RESULT,
+        GET_RESULT;
+
+        static Operation getOperation(String str) {
+            var id = Integer.parseInt(str);
+            return values()[id-1];
+        }
+    }
+
+
+
 }
+
+
