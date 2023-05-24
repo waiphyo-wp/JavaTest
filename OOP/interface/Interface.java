@@ -9,6 +9,7 @@ public class Interface implements MyInterface {
         // MyInterface.myMethod();
         
         Interface myinterface = new Interface();
+        
         myinterface.doSomething();
         myinterface.run();
         
